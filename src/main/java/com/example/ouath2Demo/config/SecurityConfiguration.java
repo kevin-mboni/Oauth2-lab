@@ -18,7 +18,7 @@ public class SecurityConfiguration {
                     auth.anyRequest().authenticated();
                 })
                 .oauth2Login(oauth2 -> oauth2
-                        .loginPage("/oauth2/authorization/messaging-client-oidc")
+                        .loginPage("/")
                         .defaultSuccessUrl("/secured", true)
                 )
                 .formLogin(withDefaults())

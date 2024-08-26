@@ -14,7 +14,7 @@ public class AppController {
 
     @GetMapping("/secured")
     public String secured() {
-        return "Hello, server is running after sign in ...";
+        return "Hello, server is running ...";
     }
     @GetMapping("/session-timeout")
     public String sessionTimeout() {
